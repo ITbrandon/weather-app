@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  background-image: linear-gradient(to bottom, rgb(210, 210, 255), rgba(250, 255, 156, 0.97));
+  width: 250px;
+}
+
+.cityName, .temperature {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.822);
+}
+
+.temperature {
+  margin-bottom: 10px;
+}
+
+.humidity {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.emoji {
+  font-size: 7rem;
+}
+
+.input {
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.381);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.button {
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(68, 228, 68);
+  padding: 1rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(39, 50, 39);
+}
+
+.errorDisplay {
+  font: 2.5rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.616);
+}
